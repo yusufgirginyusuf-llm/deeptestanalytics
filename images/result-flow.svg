@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 410" role="img" aria-labelledby="title desc">
+  <title id="title">Test result flow</title>
+  <desc id="desc">Raw test output is organized into failures and trends, then turned into a report.</desc>
+  <rect width="760" height="410" fill="#f4f6f7"/>
+  <g font-family="IBM Plex Sans, Arial, sans-serif">
+    <rect x="55" y="55" width="180" height="300" fill="#102f3d"/>
+    <text x="80" y="91" font-size="14" font-weight="600" fill="#fff">TEST OUTPUT</text>
+    <g fill="#8eb0bc">
+      <rect x="80" y="122" width="112" height="8"/>
+      <rect x="80" y="146" width="78" height="8"/>
+      <rect x="80" y="170" width="126" height="8"/>
+      <rect x="80" y="194" width="98" height="8"/>
+      <rect x="80" y="218" width="116" height="8"/>
+      <rect x="80" y="242" width="68" height="8"/>
+      <rect x="80" y="266" width="128" height="8"/>
+      <rect x="80" y="290" width="92" height="8"/>
+    </g>
+    <path d="M260 205H338" stroke="#a9bcc3" stroke-width="2"/>
+    <path d="m328 196 10 9-10 9" fill="none" stroke="#a9bcc3" stroke-width="2"/>
+    <rect x="363" y="65" width="152" height="92" fill="#fff" stroke="#d7e0e3"/>
+    <text x="384" y="98" font-size="13" font-weight="600" fill="#19766d">FAILURES</text>
+    <text x="384" y="126" font-size="13" fill="#52616a">Grouped by cause</text>
+    <rect x="363" y="179" width="152" height="92" fill="#fff" stroke="#d7e0e3"/>
+    <text x="384" y="212" font-size="13" font-weight="600" fill="#19766d">TRENDS</text>
+    <text x="384" y="240" font-size="13" fill="#52616a">Compared over time</text>
+    <rect x="363" y="293" width="152" height="62" fill="#fff" stroke="#d7e0e3"/>
+    <text x="384" y="330" font-size="13" font-weight="600" fill="#19766d">COVERAGE</text>
+    <path d="M540 205H590" stroke="#a9bcc3" stroke-width="2"/>
+    <path d="m580 196 10 9-10 9" fill="none" stroke="#a9bcc3" stroke-width="2"/>
+    <rect x="615" y="105" width="95" height="200" fill="#fff" stroke="#16475b" stroke-width="2"/>
+    <rect x="633" y="135" width="58" height="7" fill="#16475b"/>
+    <rect x="633" y="158" width="42" height="5" fill="#a9bcc3"/>
+    <rect x="633" y="176" width="58" height="5" fill="#a9bcc3"/>
+    <circle cx="640" cy="218" r="7" fill="#19766d"/>
+    <rect x="654" y="214" width="37" height="7" fill="#a9bcc3"/>
+    <circle cx="640" cy="249" r="7" fill="#19766d"/>
+    <rect x="654" y="245" width="30" height="7" fill="#a9bcc3"/>
+    <text x="662" y="333" text-anchor="middle" font-size="14" font-weight="600" fill="#132027">REPORT</text>
+  </g>
+</svg>

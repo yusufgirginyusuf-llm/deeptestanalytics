@@ -3,45 +3,85 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact — Deeptest Analytics</title>
+  <title>Contact | Deeptest Analytics</title>
   <meta name="description" content="Contact Deeptest Analytics at info@deeptestanalytics.com.">
+  <meta name="theme-color" content="#0b202b">
+  <link rel="canonical" href="https://deeptestanalytics.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Deeptest Analytics">
+  <meta property="og:title" content="Contact | Deeptest Analytics">
+  <meta property="og:description" content="Talk to Deeptest Analytics about test design, test runs, analysis, and reporting.">
+  <meta property="og:url" content="https://deeptestanalytics.com/contact.html">
+  <meta property="og:image" content="https://deeptestanalytics.com/images/social-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact | Deeptest Analytics">
+  <meta name="twitter:description" content="Talk to Deeptest Analytics about test design, test runs, analysis, and reporting.">
+  <meta name="twitter:image" content="https://deeptestanalytics.com/images/social-preview.jpg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="index.html">Deeptest Analytics</a>
+      <a class="brand" href="index.html" aria-label="Deeptest Analytics home">
+        <span class="brand-mark" aria-hidden="true">DA</span>
+        <span class="brand-text">Deeptest Analytics</span>
+      </a>
       <nav aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="what.html">What we build</a>
         <a href="who.html">Who it is for</a>
+        <a class="header-contact" href="contact.html" aria-current="page">Contact</a>
       </nav>
-      <a class="header-contact" href="contact.html" aria-current="page">Contact</a>
     </div>
   </header>
 
   <main id="main" class="page">
-    <div class="wrap sheet">
-      <div>
-        <h1>Contact</h1>
-        <p>Write to Deeptest Analytics about test design, runs, and reporting for your engineering team.</p>
-        <p>A useful note says what you test, how a run is reviewed today, and where that review breaks down. A log nobody finishes, cases that no longer match the product, or a release decision made without a clear report are the problems we want to hear about.</p>
-        <p>We work with engineering and QA teams at software companies. Include the size of the suite if you know it, and who is expected to read the results.</p>
-        <p>We reply at the address below.</p>
-        <p class="contact-mail"><a href="mailto:info@deeptestanalytics.com">info@deeptestanalytics.com</a></p>
+    <section class="hero inner-hero">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">Contact</p>
+          <h1>Tell us how your team works with test results.</h1>
+          <p class="lead">We want to understand where test design, execution, review, and reporting stop connecting for engineering teams.</p>
+        </div>
+        <figure class="diagram">
+          <img src="images/test-lifecycle.svg" width="760" height="360" alt="Test lifecycle from design through reporting">
+        </figure>
       </div>
-    </div>
+    </section>
+
+    <section class="section" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-panel">
+          <div class="prose">
+            <p class="kicker">Start a conversation</p>
+            <h2 id="contact-title">A useful note can be brief.</h2>
+            <p>Share enough context for us to understand the workflow and the point where it becomes difficult to maintain or review.</p>
+            <ul class="contact-list">
+              <li>What kind of software your team tests</li>
+              <li>How test cases are written and maintained today</li>
+              <li>How a run is reviewed and who reads the outcome</li>
+              <li>Where context is lost between a failure and the final report</li>
+            </ul>
+          </div>
+          <div class="contact-action">
+            <p>Email Deeptest Analytics</p>
+            <a href="mailto:info@deeptestanalytics.com">info@deeptestanalytics.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-bar">
       <p>Deeptest Analytics</p>
       <a href="mailto:info@deeptestanalytics.com">info@deeptestanalytics.com</a>
-      <p>deeptestanalytics.com</p>
+      <a href="https://deeptestanalytics.com">deeptestanalytics.com</a>
     </div>
   </footer>
 </body>

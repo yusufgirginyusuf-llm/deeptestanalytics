@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">Test lifecycle</title>
+  <desc id="desc">Four connected stages: design, run, analyze, and report.</desc>
+  <rect width="760" height="360" fill="#f4f6f7"/>
+  <path d="M120 180H640" fill="none" stroke="#a9bcc3" stroke-width="2"/>
+  <path d="m630 171 10 9-10 9" fill="none" stroke="#a9bcc3" stroke-width="2"/>
+  <g font-family="IBM Plex Sans, Arial, sans-serif">
+    <g transform="translate(70 120)">
+      <rect width="130" height="120" fill="#fff" stroke="#d7e0e3"/>
+      <circle cx="65" cy="0" r="22" fill="#16475b"/>
+      <text x="65" y="6" text-anchor="middle" font-size="15" fill="#fff">01</text>
+      <text x="65" y="58" text-anchor="middle" font-size="17" font-weight="600" fill="#132027">Design</text>
+      <text x="65" y="82" text-anchor="middle" font-size="12" fill="#52616a">Define behavior</text>
+    </g>
+    <g transform="translate(233 120)">
+      <rect width="130" height="120" fill="#fff" stroke="#d7e0e3"/>
+      <circle cx="65" cy="0" r="22" fill="#16475b"/>
+      <text x="65" y="6" text-anchor="middle" font-size="15" fill="#fff">02</text>
+      <text x="65" y="58" text-anchor="middle" font-size="17" font-weight="600" fill="#132027">Run</text>
+      <text x="65" y="82" text-anchor="middle" font-size="12" fill="#52616a">Record outcomes</text>
+    </g>
+    <g transform="translate(396 120)">
+      <rect width="130" height="120" fill="#fff" stroke="#d7e0e3"/>
+      <circle cx="65" cy="0" r="22" fill="#19766d"/>
+      <text x="65" y="6" text-anchor="middle" font-size="15" fill="#fff">03</text>
+      <text x="65" y="58" text-anchor="middle" font-size="17" font-weight="600" fill="#132027">Analyze</text>
+      <text x="65" y="82" text-anchor="middle" font-size="12" fill="#52616a">Group findings</text>
+    </g>
+    <g transform="translate(559 120)">
+      <rect width="130" height="120" fill="#fff" stroke="#d7e0e3"/>
+      <circle cx="65" cy="0" r="22" fill="#19766d"/>
+      <text x="65" y="6" text-anchor="middle" font-size="15" fill="#fff">04</text>
+      <text x="65" y="58" text-anchor="middle" font-size="17" font-weight="600" fill="#132027">Report</text>
+      <text x="65" y="82" text-anchor="middle" font-size="12" fill="#52616a">Share the result</text>
+    </g>
+  </g>
+</svg>

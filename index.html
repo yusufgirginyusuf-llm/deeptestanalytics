@@ -3,53 +3,140 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Deeptest Analytics — Test frameworks for software teams</title>
-  <meta name="description" content="Deeptest Analytics builds test-framework tools that help engineering and QA teams design, run, and analyze software tests.">
+  <title>Deeptest Analytics | Test frameworks for software teams</title>
+  <meta name="description" content="Deeptest Analytics is designing test-framework tools that help engineering and QA teams design, run, analyze, and report on software tests.">
+  <meta name="theme-color" content="#0b202b">
+  <link rel="canonical" href="https://deeptestanalytics.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Deeptest Analytics">
+  <meta property="og:title" content="Deeptest Analytics | Test frameworks for software teams">
+  <meta property="og:description" content="A clearer path from test design to a result the whole engineering team can use.">
+  <meta property="og:url" content="https://deeptestanalytics.com/">
+  <meta property="og:image" content="https://deeptestanalytics.com/images/social-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Deeptest Analytics | Test frameworks for software teams">
+  <meta name="twitter:description" content="A clearer path from test design to a result the whole engineering team can use.">
+  <meta name="twitter:image" content="https://deeptestanalytics.com/images/social-preview.jpg">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deeptest Analytics",
+      "url": "https://deeptestanalytics.com",
+      "email": "info@deeptestanalytics.com",
+      "description": "Test-framework tools for engineering and QA teams.",
+      "logo": "https://deeptestanalytics.com/images/favicon.svg"
+    }
+  </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="index.html">Deeptest Analytics</a>
+      <a class="brand" href="index.html" aria-label="Deeptest Analytics home">
+        <span class="brand-mark" aria-hidden="true">DA</span>
+        <span class="brand-text">Deeptest Analytics</span>
+      </a>
       <nav aria-label="Primary">
         <a href="index.html" aria-current="page">Home</a>
         <a href="what.html">What we build</a>
         <a href="who.html">Who it is for</a>
+        <a class="header-contact" href="contact.html">Contact</a>
       </nav>
-      <a class="header-contact" href="contact.html">Contact</a>
     </div>
   </header>
 
   <main id="main" class="page">
-    <div class="wrap sheet">
-      <figure class="figure">
-        <img src="images/circuit.jpg" alt="Close view of a circuit board">
-      </figure>
-      <div>
-        <h1>Test frameworks for software teams.</h1>
-        <p>Deeptest Analytics builds test-framework tools for software companies. The work is the path from a test case to a result a team can act on.</p>
-        <p>Engineering and QA teams already design tests and run them. What is usually missing is a clear record of what those tests cover, what a run actually exercised, and what should be said about it afterward.</p>
-        <p>A case stays tied to the behavior it is meant to check. When the product changes, the case is revised instead of left behind. A run keeps what passed, what failed, and what was never reached.</p>
-        <p>The output is a report the team can share. It is written from the run, so a failure does not depend on someone reading a raw log from start to finish.</p>
-        <ul class="points">
-          <li><strong>Cases</strong> Linked to the product behavior they cover, and updated when that behavior changes.</li>
-          <li><strong>Runs</strong> A record of what passed, what failed, and what the suite did not reach.</li>
-          <li><strong>Reading</strong> A summary a reviewer can use without opening the log.</li>
-          <li><strong>Report</strong> The account engineering and QA pass on after a run.</li>
-        </ul>
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">Software test intelligence</p>
+          <h1>A clearer path from test design to decision.</h1>
+          <p class="lead">Deeptest Analytics is designing test-framework tools that keep test cases, runs, findings, and reports connected for engineering and QA teams.</p>
+          <div class="hero-actions">
+            <a class="button" href="what.html">Explore what we build</a>
+            <a class="button button-secondary" href="contact.html">Start a conversation</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <picture>
+            <source srcset="images/circuit-800.webp 800w, images/circuit.webp 1400w" sizes="(max-width: 860px) 100vw, 46vw" type="image/webp">
+            <img src="images/circuit.jpg" width="1800" height="1200" fetchpriority="high" alt="Close view of an electronic circuit board">
+          </picture>
+        </figure>
       </div>
-    </div>
+    </section>
+
+    <section class="section" aria-labelledby="workflow-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">One connected workflow</p>
+          <h2 id="workflow-title">From intended behavior to an accountable result.</h2>
+          <p>Tests are most useful when their design, execution, and interpretation stay together. The planned framework follows that full lifecycle.</p>
+        </header>
+        <ol class="workflow">
+          <li>
+            <span class="workflow-number">01</span>
+            <h3>Design</h3>
+            <p>Define behavior, setup, and the result that counts as a pass.</p>
+          </li>
+          <li>
+            <span class="workflow-number">02</span>
+            <h3>Run</h3>
+            <p>Keep an exact record of what passed, failed, or never started.</p>
+          </li>
+          <li>
+            <span class="workflow-number">03</span>
+            <h3>Analyze</h3>
+            <p>Group related failures and distinguish signal from noise.</p>
+          </li>
+          <li>
+            <span class="workflow-number">04</span>
+            <h3>Report</h3>
+            <p>Give reviewers a concise account grounded in the run itself.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-muted" aria-labelledby="record-title">
+      <div class="wrap split">
+        <div class="prose">
+          <p class="kicker">A shared record</p>
+          <h2 id="record-title">Less reconstruction after the run.</h2>
+          <p>Teams often have the execution data but still need to reconstruct what it means across logs, tickets, and chat threads.</p>
+          <p>Deeptest Analytics is designed to preserve the relationship between a case, the product behavior it checks, the runs it appears in, and the finding a reviewer eventually shares.</p>
+          <p><a href="who.html">See how that record serves QA, engineering, and release leaders.</a></p>
+        </div>
+        <figure class="diagram">
+          <img src="images/test-lifecycle.svg" width="760" height="360" alt="Four-stage test lifecycle from design through report">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="cta">
+          <div>
+            <h2>Tell us how your team reviews a test run.</h2>
+            <p>We want to understand where cases, results, and reporting stop connecting.</p>
+          </div>
+          <a class="button" href="contact.html">Contact Deeptest Analytics</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-bar">
       <p>Deeptest Analytics</p>
       <a href="mailto:info@deeptestanalytics.com">info@deeptestanalytics.com</a>
-      <p>deeptestanalytics.com</p>
+      <a href="https://deeptestanalytics.com">deeptestanalytics.com</a>
     </div>
   </footer>
 </body>
