@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://deeptestanalytics.com/</loc>
+    <loc>https://deeptestanalytics.com/home</loc>
   </url>
   <url>
-    <loc>https://deeptestanalytics.com/what.html</loc>
+    <loc>https://deeptestanalytics.com/what-we-build</loc>
   </url>
   <url>
-    <loc>https://deeptestanalytics.com/who.html</loc>
+    <loc>https://deeptestanalytics.com/who-it-is-for</loc>
   </url>
   <url>
-    <loc>https://deeptestanalytics.com/contact.html</loc>
+    <loc>https://deeptestanalytics.com/contact</loc>
   </url>
 </urlset>

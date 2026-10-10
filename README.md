@@ -10,14 +10,14 @@ From this folder:
 python3 -m http.server 8080
 ```
 
-Open [http://localhost:8080](http://localhost:8080).
+Open [http://localhost:8080/home](http://localhost:8080/home).
 
 ## Pages
 
-- Home — `index.html`
-- What we build — `what.html`
-- Who it is for — `who.html`
-- Contact — `contact.html`
+- Home — `/home`
+- What we build — `/what-we-build`
+- Who it is for — `/who-it-is-for`
+- Contact — `/contact`
 - Not found — `404.html`
 
 ## Local checks
