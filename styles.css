@@ -453,8 +453,15 @@ h3 {
   font-size: 0.88rem;
 }
 
-.footer-bar p {
+.footer-identity p {
   margin: 0;
+}
+
+.footer-legal {
+  margin-top: 0.15rem;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.78rem;
+  line-height: 1.4;
 }
 
 .footer-bar a {
@@ -527,6 +534,12 @@ a:focus-visible {
   .workflow li:nth-child(-n + 2) {
     border-bottom: 1px solid var(--line);
   }
+
+  .footer-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.55rem;
+  }
 }
 
 @media (max-width: 520px) {
@@ -565,12 +578,6 @@ a:focus-visible {
 
   .cta {
     grid-template-columns: 1fr;
-  }
-
-  .footer-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.25rem;
   }
 }
 
