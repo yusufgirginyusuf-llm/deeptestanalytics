@@ -21,7 +21,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=5">
+  <link rel="stylesheet" href="/styles.css?v=6">
+  <script src="/lightbox.js?v=1" defer></script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -65,10 +66,13 @@
           </div>
         </div>
         <figure class="shot">
-          <picture>
-            <source srcset="/images/app-findings-800.webp 800w, /images/app-findings.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw" type="image/webp">
-            <img src="/images/app-findings.jpg" width="1600" height="1000" fetchpriority="high" alt="The app's findings view: a serious violation with its page, locator and a cropped screenshot of the element">
-          </picture>
+          <a class="shot-link" href="/images/app-findings.webp">
+            <picture>
+              <source srcset="/images/app-findings-800.webp 800w, /images/app-findings.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw" type="image/webp">
+              <img src="/images/app-findings.jpg" width="1600" height="1000" fetchpriority="high" alt="The app's findings view: a serious violation with its page, locator and a cropped screenshot of the element">
+            </picture>
+            <span class="shot-hint">Enlarge</span>
+          </a>
           <figcaption>Findings from an audit of this website, each with the element it is about.</figcaption>
         </figure>
       </div>
@@ -142,10 +146,13 @@
           <p><a href="/what-we-build">See what the app checks, and what needs a person.</a></p>
         </div>
         <figure class="shot">
-          <picture>
-            <source srcset="/images/report-overview-800.webp 800w, /images/report-overview.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw" type="image/webp">
-            <img src="/images/report-overview.jpg" width="1600" height="1000" loading="lazy" alt="The audit report's overview: verdict fail, 12 serious violations and 12 items needing review">
-          </picture>
+          <a class="shot-link" href="/images/report-overview.webp">
+            <picture>
+              <source srcset="/images/report-overview-800.webp 800w, /images/report-overview.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw" type="image/webp">
+              <img src="/images/report-overview.jpg" width="1600" height="1000" loading="lazy" alt="The audit report's overview: verdict fail, 12 serious violations and 12 items needing review">
+            </picture>
+            <span class="shot-hint">Enlarge</span>
+          </a>
           <figcaption>The report for the earlier version of this site.</figcaption>
         </figure>
       </div>

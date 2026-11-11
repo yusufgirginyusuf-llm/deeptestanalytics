@@ -21,7 +21,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=5">
+  <link rel="stylesheet" href="/styles.css?v=6">
+  <script src="/lightbox.js?v=1" defer></script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -65,10 +66,13 @@
           </div>
         </div>
         <figure class="shot">
-          <picture>
-            <source srcset="/images/report-finding-800.webp 800w, /images/report-finding.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw" type="image/webp">
-            <img src="/images/report-finding.jpg" width="1600" height="1000" fetchpriority="high" alt="A finding in the report: the failed rule, the element's locator and HTML, and a cropped screenshot of the element">
-          </picture>
+          <a class="shot-link" href="/images/report-finding.webp">
+            <picture>
+              <source srcset="/images/report-finding-800.webp 800w, /images/report-finding.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw" type="image/webp">
+              <img src="/images/report-finding.jpg" width="1600" height="1000" fetchpriority="high" alt="A finding in the report: the failed rule, the element's locator and HTML, and a cropped screenshot of the element">
+            </picture>
+            <span class="shot-hint">Enlarge</span>
+          </a>
           <figcaption>A finding as the report shows it.</figcaption>
         </figure>
       </div>
@@ -125,10 +129,13 @@
           <p>The report shows this for every criterion, and the human-review checklist says what to look at and how. An audit is complete when a person has finished that list.</p>
         </div>
         <figure class="shot">
-          <picture>
-            <source srcset="/images/report-matrix-800.webp 800w, /images/report-matrix.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw" type="image/webp">
-            <img src="/images/report-matrix.jpg" width="1600" height="1000" loading="lazy" alt="The report's WCAG matrix: every success criterion with its status, from failed to human review required">
-          </picture>
+          <a class="shot-link" href="/images/report-matrix.webp">
+            <picture>
+              <source srcset="/images/report-matrix-800.webp 800w, /images/report-matrix.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw" type="image/webp">
+              <img src="/images/report-matrix.jpg" width="1600" height="1000" loading="lazy" alt="The report's WCAG matrix: every success criterion with its status, from failed to human review required">
+            </picture>
+            <span class="shot-hint">Enlarge</span>
+          </a>
           <figcaption>Every criterion with its real status.</figcaption>
         </figure>
       </div>
