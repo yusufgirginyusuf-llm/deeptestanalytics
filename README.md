@@ -46,7 +46,7 @@ After starting the server:
 ## Assets
 
 - `app-*.webp/.jpg` and `report-*.webp/.jpg` are real screenshots of the Accessibility Audit Application, taken from an audit of the previous version of this site (2026-11-11). Each has a 1600-pixel WebP, an 800-pixel WebP and a JPEG fallback.
-- Each screenshot is a link to its full-size image. `lightbox.js` (the site's only script) opens it over the whole page in a `<dialog>` instead; without the script the link still shows the image. Escape, the Close button or a click outside the picture closes it.
+- Each screenshot is a link to its full-size image. `lightbox.js` (the site's only script) opens it over the whole page in a `<dialog>` instead; without the script the link still shows the image. Clicking again anywhere, Escape or the Close button closes it.
 - `test-lifecycle.svg` and `favicon.svg` are original Deeptest Analytics artwork created for this site.
 - `social-preview.jpg` is the 1200 × 630 social sharing image.
 

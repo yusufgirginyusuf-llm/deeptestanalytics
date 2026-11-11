@@ -3,8 +3,9 @@
 // Each screenshot is a plain link to its full-size image (a.shot-link), so it
 // works without this script. With it, the image opens in a modal <dialog>:
 // the browser keeps keyboard focus inside, Escape closes it, and focus goes
-// back to the screenshot that was opened. A click outside the picture or on
-// Close closes it too.
+// back to the screenshot that was opened. Clicking again, anywhere, closes it
+// too; the Close button is there for people who use neither a mouse nor an
+// Escape key (a screen reader on a phone, for example).
 (function () {
   "use strict";
   if (typeof HTMLDialogElement !== "function") return; // old browser: the link opens the image
@@ -29,10 +30,8 @@
     caption.className = "lightbox-caption";
 
     dialog.append(close, image, caption);
-    // a click on the dark area around the picture (the dialog itself) closes it
-    dialog.addEventListener("click", function (event) {
-      if (event.target === dialog) dialog.close();
-    });
+    // a second click anywhere — on the picture or around it — shrinks it back
+    dialog.addEventListener("click", function () { dialog.close(); });
     document.body.appendChild(dialog);
   }
 

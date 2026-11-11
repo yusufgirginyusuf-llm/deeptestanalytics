@@ -720,7 +720,6 @@ a:focus-visible {
   height: auto;
   object-fit: contain;
   background: var(--paper);
-  cursor: default;
 }
 
 .lightbox-caption {
@@ -729,7 +728,6 @@ a:focus-visible {
   color: rgba(255, 255, 255, 0.82);
   font-size: 0.92rem;
   text-align: center;
-  cursor: default;
 }
 
 .lightbox-close {
