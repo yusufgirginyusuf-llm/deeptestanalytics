@@ -586,3 +586,77 @@ a:focus-visible {
     scroll-behavior: auto;
   }
 }
+
+/* --- product pages: real screenshots, three-up cards, plain lists --- */
+
+.shot {
+  margin: 0;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.shot figcaption,
+.diagram figcaption {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.hero-inner.single {
+  grid-template-columns: 1fr;
+  min-height: 0;
+}
+
+.capability-grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.plain-list {
+  max-width: var(--reading);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+}
+
+.plain-list li {
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.plain-list li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.plain-list strong {
+  color: var(--ink);
+}
+
+.prose a,
+.plain-list a {
+  font-weight: 500;
+}
+
+@media (max-width: 860px) {
+  .capability-grid.three {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* five navigation links: wrap whole labels onto a second row on narrow
+   screens instead of breaking each label in two */
+@media (max-width: 860px) {
+  .site-header nav {
+    flex-wrap: wrap;
+    row-gap: 0.15rem;
+  }
+
+  .site-header nav a {
+    white-space: nowrap;
+  }
+}

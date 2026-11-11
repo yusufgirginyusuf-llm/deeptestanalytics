@@ -3,31 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>What we build | Deeptest Analytics</title>
-  <meta name="description" content="Explore the test lifecycle Deeptest Analytics is designing: test design, execution records, result analysis, comparison, and reporting.">
+  <title>What we build | Accessibility Audit Application | Deeptest Analytics</title>
+  <meta name="description" content="A desktop app for Windows and Mac and a command-line tool that audit websites against WCAG 2.2 level A and AA: keyboard, visual, form and screen-reader checks with evidence.">
   <meta name="theme-color" content="#0b202b">
   <link rel="canonical" href="https://deeptestanalytics.com/what-we-build">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Deeptest Analytics">
-  <meta property="og:title" content="What we build | Deeptest Analytics">
-  <meta property="og:description" content="A connected framework for test design, execution, analysis, comparison, and reporting.">
+  <meta property="og:title" content="What we build | Accessibility Audit Application | Deeptest Analytics">
+  <meta property="og:description" content="A desktop app for Windows and Mac and a command-line tool that audit websites against WCAG 2.2 level A and AA: keyboard, visual, form and screen-reader checks with evidence.">
   <meta property="og:url" content="https://deeptestanalytics.com/what-we-build">
   <meta property="og:image" content="https://deeptestanalytics.com/images/social-preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="What we build | Deeptest Analytics">
-  <meta name="twitter:description" content="A connected framework for test design, execution, analysis, comparison, and reporting.">
+  <meta name="twitter:title" content="What we build | Accessibility Audit Application | Deeptest Analytics">
+  <meta name="twitter:description" content="A desktop app for Windows and Mac and a command-line tool that audit websites against WCAG 2.2 level A and AA: keyboard, visual, form and screen-reader checks with evidence.">
   <meta name="twitter:image" content="https://deeptestanalytics.com/images/social-preview.jpg">
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=4">
+  <link rel="stylesheet" href="/styles.css?v=5">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deeptest Analytics",
+      "url": "https://deeptestanalytics.com",
+      "email": "info@deeptestanalytics.com",
+      "description": "Maker of the Accessibility Audit Application, a WCAG 2.2 accessibility audit tool for websites.",
+      "logo": "https://deeptestanalytics.com/images/favicon.svg"
+    }
+  </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="/home" aria-label="Deeptest Analytics home">
+      <a class="brand" href="/home">
         <span class="brand-mark" aria-hidden="true">DA</span>
         <span class="brand-text">Deeptest Analytics</span>
       </a>
@@ -35,6 +46,7 @@
         <a href="/home">Home</a>
         <a href="/what-we-build" aria-current="page">What we build</a>
         <a href="/who-it-is-for">Who it is for</a>
+        <a href="/pricing">Pricing</a>
         <a class="header-contact" href="/contact">Contact</a>
       </nav>
     </div>
@@ -45,61 +57,115 @@
       <div class="wrap hero-inner">
         <div class="hero-copy">
           <p class="kicker">What we build</p>
-          <h1>One framework for the full test lifecycle</h1>
-          <p class="lead">Deeptest Analytics is designed to keep the intent of a test connected to its execution, findings, comparisons, and final report.</p>
+          <h1>Accessibility Audit Application</h1>
+          <p class="lead">A desktop app for Windows and Mac, and a command-line tool for build pipelines, that audit websites against WCAG 2.2 level A and AA.</p>
+          <div class="hero-actions">
+            <a class="button" href="mailto:info@deeptestanalytics.com?subject=Early%20access%20to%20the%20Accessibility%20Audit%20Application">Request early access</a>
+            <a class="button button-secondary" href="/pricing">Trial and pricing</a>
+          </div>
         </div>
-        <figure class="hero-media">
+        <figure class="shot">
           <picture>
-            <source srcset="/images/monitor-800.webp 800w, /images/monitor.webp 1400w" sizes="(max-width: 860px) 100vw, 46vw" type="image/webp">
-            <img src="/images/monitor.jpg" width="1600" height="1067" loading="lazy" decoding="async" alt="Close view of source code on a screen">
+            <source srcset="/images/report-finding-800.webp 800w, /images/report-finding.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw" type="image/webp">
+            <img src="/images/report-finding.jpg" width="1600" height="1000" fetchpriority="high" alt="A finding in the report: the failed rule, the element's locator and HTML, and a cropped screenshot of the element">
           </picture>
+          <figcaption>A finding as the report shows it.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="capabilities-title">
+    <section class="section" aria-labelledby="checks-title">
       <div class="wrap">
         <header class="section-head">
-          <p class="kicker">Core capabilities</p>
-          <h2 id="capabilities-title">A durable record, not another disconnected output</h2>
-          <p>Each capability is intended to preserve context for the next step, so the report can be traced back to the cases and run that produced it.</p>
+          <p class="kicker">What it checks</p>
+          <h2 id="checks-title">Six kinds of checks in one audit</h2>
+          <p>Results from every source are merged, so one problem on one element is one finding, however many checks noticed it.</p>
         </header>
         <div class="capability-grid">
-          <article class="capability">
-            <span class="capability-label">Design</span>
-            <h3>Describe intended behavior</h3>
-            <p>Record the product behavior, setup, conditions, and result that counts as a pass. Cases can be revised as requirements and code change.</p>
-          </article>
-          <article class="capability">
-            <span class="capability-label">Execute</span>
-            <h3>Preserve the run</h3>
-            <p>Record which cases ran, which passed or failed, and which never started.</p>
-          </article>
-          <article class="capability">
-            <span class="capability-label">Compare</span>
-            <h3>See what changed</h3>
-            <p>Compare runs of the same cases to distinguish a new failure, a recurring issue, and an inconsistent result.</p>
-          </article>
-          <article class="capability">
-            <span class="capability-label">Report</span>
-            <h3>Explain the outcome</h3>
-            <p>Group related findings and prepare a concise account that points back to the underlying execution data.</p>
-          </article>
+          <div class="capability">
+            <span class="capability-label">Keyboard</span>
+            <h3>A real Tab crawl</h3>
+            <p>It tabs through the page and reports controls the keyboard cannot reach, focus traps, skip links that go nowhere, missing focus indicators and focus hidden behind sticky bars.</p>
+          </div>
+          <div class="capability">
+            <span class="capability-label">Visual</span>
+            <h3>Measured, not guessed</h3>
+            <p>Contrast sampled from rendered pixels over gradients and images, 24-pixel target size, text that clips when spacing grows, sideways scrolling at 320 pixels, motion that ignores the reduced-motion setting, and audio that starts by itself.</p>
+          </div>
+          <div class="capability">
+            <span class="capability-label">Forms</span>
+            <h3>Errors that reach everyone</h3>
+            <p>It types invalid values with real keystrokes and checks that the error message is exposed to assistive technology. It never submits a form.</p>
+          </div>
+          <div class="capability">
+            <span class="capability-label">Screen reader</span>
+            <h3>What is actually announced</h3>
+            <p>Accessible names, landmarks and heading structure from the browser's accessibility tree, and on request a walkthrough with a real screen reader: NVDA on Windows, VoiceOver on Mac.</p>
+          </div>
+          <div class="capability">
+            <span class="capability-label">Rule engines</span>
+            <h3>Two engines, checked against the page</h3>
+            <p>The axe-core and IBM Equal Access rule sets run on every page. Where an engine cannot decide, the app measures the live element and closes the question only when it has proof.</p>
+          </div>
+          <div class="capability">
+            <span class="capability-label">Hard-to-reach pages</span>
+            <h3>Behind logins and interactions</h3>
+            <p>Record a journey once, including a login, and audit each step. Embedded frames and open shadow DOM are audited too.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-muted" aria-labelledby="analysis-title">
+    <section class="section section-muted" aria-labelledby="coverage-title">
       <div class="wrap split">
         <div class="prose">
-          <p class="kicker">From output to understanding</p>
-          <h2 id="analysis-title">Understanding starts after a test finishes</h2>
-          <p>Raw output proves that something ran. It does not automatically tell a reviewer which failures belong together, whether a result is a regression, or how much of the intended suite completed.</p>
-          <p>The planned analysis layer organizes those signals before they reach the report. The goal is not to hide detail, but to make the important detail easier to find and verify.</p>
+          <p class="kicker">Honest about coverage</p>
+          <h2 id="coverage-title">No green tick for something nobody tested</h2>
+          <p>No tool can decide all of WCAG. Of the 55 level A and AA success criteria in WCAG 2.2, the app tests the main failure modes of 19 and a named part of 16. The other 20 need a person.</p>
+          <p>The report shows this for every criterion, and the human-review checklist says what to look at and how. An audit is complete when a person has finished that list.</p>
         </div>
-        <figure class="diagram">
-          <img src="/images/result-flow.svg" width="760" height="410" loading="lazy" alt="Test output organized into failures, trends, coverage, and a report">
+        <figure class="shot">
+          <picture>
+            <source srcset="/images/report-matrix-800.webp 800w, /images/report-matrix.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw" type="image/webp">
+            <img src="/images/report-matrix.jpg" width="1600" height="1000" loading="lazy" alt="The report's WCAG matrix: every success criterion with its status, from failed to human review required">
+          </picture>
+          <figcaption>Every criterion with its real status.</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="runs-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">Where it runs</p>
+          <h2 id="runs-title">On a desk or in a pipeline</h2>
+        </header>
+        <div class="capability-grid">
+          <div class="capability">
+            <span class="capability-label">Desktop app</span>
+            <h3>Windows and Mac</h3>
+            <p>Start audits, watch progress, triage findings, record journeys and compare an audit with the one before it. Reports open in the app and are ordinary files you can pass on.</p>
+          </div>
+          <div class="capability">
+            <span class="capability-label">Command line</span>
+            <h3>Any build pipeline</h3>
+            <p>One command with clear exit codes, a baseline for known issues so only new problems fail a build, and results as HTML, JSON, Markdown, SARIF for code scanning, or Allure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" aria-labelledby="limits-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">What it does not do</p>
+          <h2 id="limits-title">Limits we would rather state ourselves</h2>
+        </header>
+        <ul class="plain-list">
+          <li><strong>It does not certify conformance.</strong> A report without findings is not a statement that a site meets WCAG or any law.</li>
+          <li><strong>It does not change your site.</strong> There is no overlay or script to install. It reports; your team fixes.</li>
+          <li><strong>It audits in one browser.</strong> Pages are loaded in Chromium at a desktop size. Other browsers and phone layouts are not audited yet.</li>
+        </ul>
       </div>
     </section>
 
@@ -107,10 +173,10 @@
       <div class="wrap">
         <div class="cta">
           <div>
-            <h2>Where does your testing workflow lose context?</h2>
-            <p>Share how your team handles cases, runs, and the report that follows.</p>
+            <h2>See it on your own pages</h2>
+            <p>A 14-day trial with every feature. Tell us what you want to audit and we will send you the app.</p>
           </div>
-          <a class="button" href="/contact">Talk to us</a>
+          <a class="button" href="mailto:info@deeptestanalytics.com?subject=Early%20access%20to%20the%20Accessibility%20Audit%20Application">Request early access</a>
         </div>
       </div>
     </section>
