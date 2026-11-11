@@ -3,25 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Deeptest Analytics | Test frameworks for software teams</title>
-  <meta name="description" content="Deeptest Analytics is designing test-framework tools that help engineering and QA teams design, run, analyze, and report on software tests.">
+  <title>Deeptest Analytics | Accessibility Audit Application for WCAG 2.2</title>
+  <meta name="description" content="The Accessibility Audit Application checks websites against WCAG 2.2 with a real keyboard, screen-reader output and measured evidence, on your own computer.">
   <meta name="theme-color" content="#0b202b">
   <link rel="canonical" href="https://deeptestanalytics.com/home">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Deeptest Analytics">
-  <meta property="og:title" content="Deeptest Analytics | Test frameworks for software teams">
-  <meta property="og:description" content="A clearer path from test design to a result the whole engineering team can use.">
+  <meta property="og:title" content="Deeptest Analytics | Accessibility Audit Application for WCAG 2.2">
+  <meta property="og:description" content="A WCAG 2.2 audit that uses the page like a person does, and says plainly what it could not check.">
   <meta property="og:url" content="https://deeptestanalytics.com/home">
   <meta property="og:image" content="https://deeptestanalytics.com/images/social-preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Deeptest Analytics | Test frameworks for software teams">
-  <meta name="twitter:description" content="A clearer path from test design to a result the whole engineering team can use.">
+  <meta name="twitter:title" content="Deeptest Analytics | Accessibility Audit Application for WCAG 2.2">
+  <meta name="twitter:description" content="A WCAG 2.2 audit that uses the page like a person does, and says plainly what it could not check.">
   <meta name="twitter:image" content="https://deeptestanalytics.com/images/social-preview.jpg">
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=4">
+  <link rel="stylesheet" href="/styles.css?v=7">
+  <script src="/lightbox.js?v=2" defer></script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -29,7 +30,7 @@
       "name": "Deeptest Analytics",
       "url": "https://deeptestanalytics.com",
       "email": "info@deeptestanalytics.com",
-      "description": "Test-framework tools for engineering and QA teams.",
+      "description": "Maker of the Accessibility Audit Application, a WCAG 2.2 accessibility audit tool for websites.",
       "logo": "https://deeptestanalytics.com/images/favicon.svg"
     }
   </script>
@@ -38,7 +39,7 @@
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="/home" aria-label="Deeptest Analytics home">
+      <a class="brand" href="/home">
         <span class="brand-mark" aria-hidden="true">DA</span>
         <span class="brand-text">Deeptest Analytics</span>
       </a>
@@ -46,6 +47,7 @@
         <a href="/home" aria-current="page">Home</a>
         <a href="/what-we-build">What we build</a>
         <a href="/who-it-is-for">Who it is for</a>
+        <a href="/pricing">Pricing</a>
         <a class="header-contact" href="/contact">Contact</a>
       </nav>
     </div>
@@ -55,66 +57,118 @@
     <section class="hero">
       <div class="wrap hero-inner">
         <div class="hero-copy">
-          <p class="kicker">Software test intelligence</p>
-          <h1>A clearer path from test design to decision</h1>
-          <p class="lead">Deeptest Analytics is designing test-framework tools that keep test cases, runs, findings, and reports connected for engineering and QA teams.</p>
+          <p class="kicker">Accessibility audit · Early access</p>
+          <h1>The accessibility audit an expert would do by hand</h1>
+          <p class="lead">The Accessibility Audit Application checks your website against WCAG 2.2 with a real keyboard, screen-reader output and measured evidence. It runs on your own computer, and it tells you plainly what it could not check.</p>
           <div class="hero-actions">
-            <a class="button" href="/what-we-build">Explore what we build</a>
-            <a class="button button-secondary" href="/contact">Start a conversation</a>
+            <a class="button" href="mailto:info@deeptestanalytics.com?subject=Early%20access%20to%20the%20Accessibility%20Audit%20Application">Request early access</a>
+            <a class="button button-secondary" href="/what-we-build">See what it checks</a>
           </div>
         </div>
-        <figure class="hero-media">
-          <picture>
-            <source srcset="/images/circuit-800.webp 800w, /images/circuit.webp 1400w" sizes="(max-width: 860px) 100vw, 46vw" type="image/webp">
-            <img src="/images/circuit.jpg" width="1800" height="1200" fetchpriority="high" alt="Close view of an electronic circuit board">
-          </picture>
+        <figure class="shot">
+          <a class="shot-link" href="/images/app-findings.webp">
+            <picture>
+              <source srcset="/images/app-findings-800.webp 800w, /images/app-findings.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw" type="image/webp">
+              <img src="/images/app-findings.jpg" width="1600" height="1000" fetchpriority="high" alt="The app's findings view: a serious violation with its page, locator and a cropped screenshot of the element">
+            </picture>
+            <span class="shot-hint">Enlarge</span>
+          </a>
+          <figcaption>Findings from an audit of this website, each with the element it is about.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="workflow-title">
+    <section class="section" aria-labelledby="different-title">
       <div class="wrap">
         <header class="section-head">
-          <p class="kicker">One connected workflow</p>
-          <h2 id="workflow-title">From intended behavior to an accountable result</h2>
-          <p>Tests are most useful when their design, execution, and interpretation stay together. The planned framework follows that full lifecycle.</p>
+          <p class="kicker">Why it is different</p>
+          <h2 id="different-title">Evidence you can stand behind</h2>
+          <p>Most automated checkers read a page's code and stop there. This one also operates the page, measures what it sees, and keeps the doubtful cases apart from the certain ones.</p>
+        </header>
+        <div class="capability-grid three">
+          <div class="capability">
+            <span class="capability-label">Real interaction</span>
+            <h3>It uses the page like a person does</h3>
+            <p>It presses Tab through every stop, looks for a visible focus ring, measures contrast from the rendered pixels, checks target sizes and reflow at 320 pixels, and can read the page with NVDA or VoiceOver.</p>
+          </div>
+          <div class="capability">
+            <span class="capability-label">Honest coverage</span>
+            <h3>It says what it did not check</h3>
+            <p>Every WCAG 2.2 level A and AA criterion is marked as checked, partly checked or needing a person. A clean result never passes for a criterion nobody tested, and the rest comes as a checklist.</p>
+          </div>
+          <div class="capability">
+            <span class="capability-label">Private by design</span>
+            <h3>Your pages stay on your machine</h3>
+            <p>Audits run locally, so staging sites and pages behind a login are never uploaded. There is no account and no license server.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" aria-labelledby="workflow-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker">How an audit runs</p>
+          <h2 id="workflow-title">From a list of pages to a report you can hand over</h2>
         </header>
         <ol class="workflow">
           <li>
             <span class="workflow-number">01</span>
-            <h3>Design</h3>
-            <p>Define behavior, setup, and the result that counts as a pass.</p>
+            <h3>Choose pages</h3>
+            <p>Give it addresses, a sitemap or a starting page to crawl, or record a journey through a login.</p>
           </li>
           <li>
             <span class="workflow-number">02</span>
-            <h3>Run</h3>
-            <p>Keep an exact record of what passed, failed, or never started.</p>
+            <h3>Audit</h3>
+            <p>Two rule engines run together with its own keyboard, visual, form and screen-reader checks.</p>
           </li>
           <li>
             <span class="workflow-number">03</span>
-            <h3>Analyze</h3>
-            <p>Group related failures and distinguish signal from noise.</p>
+            <h3>Review</h3>
+            <p>Each finding shows the element, a cropped screenshot and how to fix it. Confirm it or dismiss it with a note.</p>
           </li>
           <li>
             <span class="workflow-number">04</span>
             <h3>Report</h3>
-            <p>Give reviewers a concise account grounded in the run itself.</p>
+            <p>One self-contained report for people, and machine-readable results for a build pipeline.</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <section class="section section-muted" aria-labelledby="record-title">
+    <section class="section" aria-labelledby="own-title">
       <div class="wrap split">
         <div class="prose">
-          <p class="kicker">A shared record</p>
-          <h2 id="record-title">Less to reconstruct after the run</h2>
-          <p>Teams often have the execution data but still need to reconstruct what it means across logs, tickets, and chat threads.</p>
-          <p>Deeptest Analytics is designed to preserve the relationship between a case, the product behavior it checks, the runs it appears in, and the finding a reviewer eventually shares.</p>
-          <p><a href="/who-it-is-for">See how that record serves QA, engineering, and release leaders.</a></p>
+          <p class="kicker">Our own website first</p>
+          <h2 id="own-title">It found 12 problems on this site</h2>
+          <p>Before writing these pages we audited the previous version of this website. On four pages the app reported 12 serious violations: a logo link whose spoken name did not match its visible text, and groups of cards a screen reader could not tell apart.</p>
+          <p>We fixed them before publishing this version. The automated checks now report no violations here, and the criteria that need a person are on our own review list too.</p>
+          <p><a href="/what-we-build">See what the app checks, and what needs a person.</a></p>
+        </div>
+        <figure class="shot">
+          <a class="shot-link" href="/images/report-overview.webp">
+            <picture>
+              <source srcset="/images/report-overview-800.webp 800w, /images/report-overview.webp 1600w" sizes="(max-width: 860px) 100vw, 48vw" type="image/webp">
+              <img src="/images/report-overview.jpg" width="1600" height="1000" loading="lazy" alt="The audit report's overview: verdict fail, 12 serious violations and 12 items needing review">
+            </picture>
+            <span class="shot-hint">Enlarge</span>
+          </a>
+          <figcaption>The report for the earlier version of this site.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-muted" aria-labelledby="next-title">
+      <div class="wrap split">
+        <div class="prose">
+          <p class="kicker">Also in design</p>
+          <h2 id="next-title">Test-framework tools for the full test lifecycle</h2>
+          <p>Deeptest Analytics is also designing tools that keep test cases, runs, findings and reports connected, so a report can be traced back to the run that produced it.</p>
+          <p><a href="/contact">Tell us how your team reviews a test run.</a></p>
         </div>
         <figure class="diagram">
-          <img src="/images/test-lifecycle.svg" width="760" height="360" alt="Four-stage test lifecycle from design through report">
+          <img src="/images/test-lifecycle.svg" width="760" height="360" loading="lazy" alt="Four-stage test lifecycle: design, run, analyze, report">
+          <figcaption>The planned framework follows a test from design to report.</figcaption>
         </figure>
       </div>
     </section>
@@ -123,10 +177,10 @@
       <div class="wrap">
         <div class="cta">
           <div>
-            <h2>Tell us how your team reviews a test run</h2>
-            <p>We want to understand where cases, results, and reporting lose their connection.</p>
+            <h2>Try it on your own site</h2>
+            <p>A 14-day trial with every feature. Tell us what you want to audit and we will send you the app.</p>
           </div>
-          <a class="button" href="/contact">Contact Deeptest Analytics</a>
+          <a class="button" href="mailto:info@deeptestanalytics.com?subject=Early%20access%20to%20the%20Accessibility%20Audit%20Application">Request early access</a>
         </div>
       </div>
     </section>

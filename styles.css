@@ -586,3 +586,174 @@ a:focus-visible {
     scroll-behavior: auto;
   }
 }
+
+/* --- product pages: real screenshots, three-up cards, plain lists --- */
+
+.shot {
+  margin: 0;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.shot figcaption,
+.diagram figcaption {
+  margin-top: 0.6rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.hero-inner.single {
+  grid-template-columns: 1fr;
+  min-height: 0;
+}
+
+.capability-grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.plain-list {
+  max-width: var(--reading);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+}
+
+.plain-list li {
+  padding: 1rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.plain-list li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.plain-list strong {
+  color: var(--ink);
+}
+
+.prose a,
+.plain-list a {
+  font-weight: 500;
+}
+
+@media (max-width: 860px) {
+  .capability-grid.three {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* five navigation links: wrap whole labels onto a second row on narrow
+   screens instead of breaking each label in two */
+@media (max-width: 860px) {
+  .site-header nav {
+    flex-wrap: wrap;
+    row-gap: 0.15rem;
+  }
+
+  .site-header nav a {
+    white-space: nowrap;
+  }
+}
+
+/* --- screenshots open over the whole page (lightbox.js) --- */
+
+.shot-link {
+  position: relative;
+  display: block;
+  cursor: zoom-in;
+}
+
+.shot-hint {
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0.6rem;
+  padding: 0.2rem 0.55rem;
+  background: var(--navy-950);
+  color: var(--paper);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.shot-link:hover .shot-hint,
+.shot-link:focus-visible .shot-hint {
+  background: var(--navy-800);
+}
+
+.lightbox {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
+  margin: 0;
+  padding: 3.6rem 1rem 1rem;
+  border: 0;
+  background: rgba(11, 32, 43, 0.96);
+  color: var(--paper);
+  overflow: auto;
+  cursor: zoom-out;
+}
+
+.lightbox[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.lightbox::backdrop {
+  background: rgba(11, 32, 43, 0.96);
+}
+
+.lightbox-image {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100dvh - 8rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  background: var(--paper);
+}
+
+.lightbox-caption {
+  margin: 0;
+  max-width: 60rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 0.8rem;
+  right: 1rem;
+  min-height: 2.4rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--paper);
+  background: var(--paper);
+  color: var(--navy-950);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  background: var(--teal-100);
+}
+
+.lightbox-close:focus-visible {
+  outline: 2px solid var(--paper);
+  outline-offset: 3px;
+}
+
+/* the page behind does not scroll while a screenshot is open */
+html:has(dialog.lightbox[open]) {
+  overflow: hidden;
+}
